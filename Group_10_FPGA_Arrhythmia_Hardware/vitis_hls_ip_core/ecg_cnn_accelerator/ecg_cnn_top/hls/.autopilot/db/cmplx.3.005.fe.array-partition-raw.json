@@ -1,0 +1,24 @@
+{
+  "0": {
+    "basicblocks": 295,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 7,
+    "file": "cnn.cpp",
+    "fileloc": 348,
+    "instructions": 1221,
+    "loads": {
+      "G": 211,
+      "L": 19,
+      "T": 1
+    },
+    "memory_accesses": 225,
+    "name": "ecg_cnn_top",
+    "stores": {
+      "G": 171,
+      "L": 17,
+      "T": 1
+    },
+    "total_instructions": 1221
+  }
+}

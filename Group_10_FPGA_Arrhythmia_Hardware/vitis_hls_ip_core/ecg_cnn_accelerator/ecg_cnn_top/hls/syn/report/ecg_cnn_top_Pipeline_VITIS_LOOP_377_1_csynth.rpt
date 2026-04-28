@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vitis HLS Report for 'ecg_cnn_top_Pipeline_VITIS_LOOP_377_1'
+================================================================
+* Date:           Tue Mar 31 12:28:07 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        ecg_cnn_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  15.00 ns|  10.950 ns|     4.05 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      189|      189|  2.835 us|  2.835 us|  187|  187|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_377_1  |      187|      187|         3|          1|          1|   186|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     34|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     45|    -|
+|Register         |        -|    -|      62|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      62|     79|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln377_fu_96_p2         |         +|   0|  0|  15|           8|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln377_fu_90_p2        |      icmp|   0|  0|  15|           8|           8|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  34|          18|          12|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |INPUT_BUS_blk_n_R        |   9|          2|    1|          2|
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_t_1     |   9|          2|    8|         16|
+    |t_fu_50                  |   9|          2|    8|         16|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   19|         38|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+----+----+-----+-----------+
+    |                    Name                   | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------+----+----+-----+-----------+
+    |INPUT_BUS_addr_read_reg_142                |  32|   0|   32|          0|
+    |ap_CS_fsm                                  |   1|   0|    1|          0|
+    |ap_block_pp0_stage0_subdone_grp0_done_reg  |   1|   0|    1|          0|
+    |ap_done_reg                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                    |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg           |   1|   0|    1|          0|
+    |t_1_reg_133                                |   8|   0|    8|          0|
+    |t_1_reg_133_pp0_iter1_reg                  |   8|   0|    8|          0|
+    |t_fu_50                                    |   8|   0|    8|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+    |Total                                      |  62|   0|   62|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------+-----+-----+------------+---------------------------------------+--------------+
+|                 RTL Ports                | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++------------------------------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk                                    |   in|    1|  ap_ctrl_hs|  ecg_cnn_top_Pipeline_VITIS_LOOP_377_1|  return value|
+|ap_rst                                    |   in|    1|  ap_ctrl_hs|  ecg_cnn_top_Pipeline_VITIS_LOOP_377_1|  return value|
+|ap_start                                  |   in|    1|  ap_ctrl_hs|  ecg_cnn_top_Pipeline_VITIS_LOOP_377_1|  return value|
+|ap_done                                   |  out|    1|  ap_ctrl_hs|  ecg_cnn_top_Pipeline_VITIS_LOOP_377_1|  return value|
+|ap_idle                                   |  out|    1|  ap_ctrl_hs|  ecg_cnn_top_Pipeline_VITIS_LOOP_377_1|  return value|
+|ap_ready                                  |  out|    1|  ap_ctrl_hs|  ecg_cnn_top_Pipeline_VITIS_LOOP_377_1|  return value|
+|m_axi_INPUT_BUS_0_AWVALID                 |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWREADY                 |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWADDR                  |  out|   64|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWID                    |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWLEN                   |  out|   32|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWSIZE                  |  out|    3|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWBURST                 |  out|    2|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWLOCK                  |  out|    2|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWCACHE                 |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWPROT                  |  out|    3|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWQOS                   |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWREGION                |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_AWUSER                  |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WVALID                  |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WREADY                  |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WDATA                   |  out|   32|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WSTRB                   |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WLAST                   |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WID                     |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_WUSER                   |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARVALID                 |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARREADY                 |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARADDR                  |  out|   64|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARID                    |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARLEN                   |  out|   32|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARSIZE                  |  out|    3|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARBURST                 |  out|    2|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARLOCK                  |  out|    2|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARCACHE                 |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARPROT                  |  out|    3|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARQOS                   |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARREGION                |  out|    4|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_ARUSER                  |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RVALID                  |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RREADY                  |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RDATA                   |   in|   32|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RLAST                   |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RID                     |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RFIFONUM                |   in|    9|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RUSER                   |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_RRESP                   |   in|    2|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_BVALID                  |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_BREADY                  |  out|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_BRESP                   |   in|    2|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_BID                     |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|m_axi_INPUT_BUS_0_BUSER                   |   in|    1|       m_axi|                              INPUT_BUS|       pointer|
+|sext_ln377                                |   in|   62|     ap_none|                             sext_ln377|        scalar|
+|ecg_cnn_top_float_float_in_2d_2_address0  |  out|    8|   ap_memory|        ecg_cnn_top_float_float_in_2d_2|         array|
+|ecg_cnn_top_float_float_in_2d_2_ce0       |  out|    1|   ap_memory|        ecg_cnn_top_float_float_in_2d_2|         array|
+|ecg_cnn_top_float_float_in_2d_2_we0       |  out|    1|   ap_memory|        ecg_cnn_top_float_float_in_2d_2|         array|
+|ecg_cnn_top_float_float_in_2d_2_d0        |  out|   32|   ap_memory|        ecg_cnn_top_float_float_in_2d_2|         array|
++------------------------------------------+-----+-----+------------+---------------------------------------+--------------+
+

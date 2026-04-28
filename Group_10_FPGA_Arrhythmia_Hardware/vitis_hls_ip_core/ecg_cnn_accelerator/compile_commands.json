@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=ecg_cnn_top",
+      "-c",
+      "C:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator/cnn.cpp"
+    ],
+    "file": "C:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator/cnn.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator/testbench.cpp"
+    ],
+    "file": "C:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator/testbench.cpp"
+  }
+]

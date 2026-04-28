@@ -1,0 +1,26 @@
+PHASE 2 FIX — EVALUATION RESULTS
+============================================================
+
+Fixes applied:
+  1. SMOTE+ENN balancing
+  2. Class weights
+  3. Label smoothing = 0.1
+
+Test Accuracy  : 94.5231%
+Test Loss      : 0.5111
+F1 Weighted    : 0.9534
+F1 Macro       : 0.7882
+Epochs trained : 101
+Best epoch     : 81
+
+                  precision    recall  f1-score   support
+
+          Normal     0.9967    0.9411    0.9681     18118
+Supraventricular     0.4669    0.9137    0.6180       556
+     Ventricular     0.9115    0.9599    0.9351      1448
+          Fusion     0.2986    0.9012    0.4485       162
+         Unknown     0.9495    0.9938    0.9711      1608
+
+        accuracy                         0.9452     21892
+       macro avg     0.7246    0.9419    0.7882     21892
+    weighted avg     0.9690    0.9452    0.9534     21892

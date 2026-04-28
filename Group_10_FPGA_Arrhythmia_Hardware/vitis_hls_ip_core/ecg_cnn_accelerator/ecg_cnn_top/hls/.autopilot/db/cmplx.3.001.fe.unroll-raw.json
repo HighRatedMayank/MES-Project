@@ -1,0 +1,313 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "13 14 10 8 15 12 7 2 6 5 4 9 16 3",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn.cpp",
+    "fileloc": 348,
+    "instructions": 34,
+    "loads": {
+      "T": 1
+    },
+    "memory_accesses": 2,
+    "name": "ecg_cnn_top",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 1022
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn.cpp",
+    "fileloc": 37,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "dq",
+    "total_instructions": 5
+  },
+  "10": {
+    "basicblocks": 14,
+    "calls": "1 11",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 89,
+    "instructions": 58,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 2,
+    "name": "s1_branch_B",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 66
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "cnn.cpp",
+    "fileloc": 40,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "bn",
+    "total_instructions": 3
+  },
+  "12": {
+    "basicblocks": 14,
+    "calls": "1 11",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 150,
+    "instructions": 58,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 2,
+    "name": "s2_branch_A",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 66
+  },
+  "13": {
+    "basicblocks": 13,
+    "calls": "1 11 17",
+    "control_depth": 3,
+    "def_use_depth": 6,
+    "file": "cnn.cpp",
+    "fileloc": 46,
+    "instructions": 51,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 2,
+    "name": "s1_seq_conv",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 65
+  },
+  "14": {
+    "basicblocks": 14,
+    "calls": "1 11",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 66,
+    "instructions": 58,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 2,
+    "name": "s1_branch_A",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 66
+  },
+  "15": {
+    "basicblocks": 14,
+    "calls": "1 11 17",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 126,
+    "instructions": 59,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 2,
+    "name": "s2_seq_conv",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 73
+  },
+  "16": {
+    "basicblocks": 7,
+    "calls": "1 1 11 17",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 307,
+    "instructions": 40,
+    "loads": {
+      "G": 5
+    },
+    "memory_accesses": 2,
+    "name": "fc2_layer",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 59
+  },
+  "17": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn.cpp",
+    "fileloc": 36,
+    "instructions": 6,
+    "memory_accesses": 0,
+    "name": "relu_f",
+    "total_instructions": 6
+  },
+  "2": {
+    "basicblocks": 10,
+    "calls": "17 17",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "cnn.cpp",
+    "fileloc": 196,
+    "instructions": 48,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 5,
+    "name": "s2_add_pool",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 60
+  },
+  "3": {
+    "basicblocks": 25,
+    "calls": "1 1",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 321,
+    "instructions": 102,
+    "loads": {
+      "G": 3,
+      "L": 5
+    },
+    "memory_accesses": 9,
+    "name": "output_layer",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 112
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn.cpp",
+    "fileloc": 279,
+    "instructions": 24,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 1,
+    "name": "gap_layer",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 24
+  },
+  "5": {
+    "basicblocks": 23,
+    "calls": "1 11 17",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 245,
+    "instructions": 92,
+    "loads": {
+      "G": 4,
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "s4_conv_pool",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 106
+  },
+  "6": {
+    "basicblocks": 23,
+    "calls": "1 11 17",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 210,
+    "instructions": 92,
+    "loads": {
+      "G": 4,
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "s3_conv_pool",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 106
+  },
+  "7": {
+    "basicblocks": 14,
+    "calls": "1 11",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 173,
+    "instructions": 58,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 2,
+    "name": "s2_branch_B",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 66
+  },
+  "8": {
+    "basicblocks": 10,
+    "calls": "17 17",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "cnn.cpp",
+    "fileloc": 112,
+    "instructions": 48,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 5,
+    "name": "s1_add_pool",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 60
+  },
+  "9": {
+    "basicblocks": 7,
+    "calls": "1 1 11 17",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn.cpp",
+    "fileloc": 293,
+    "instructions": 40,
+    "loads": {
+      "G": 5
+    },
+    "memory_accesses": 2,
+    "name": "fc1_layer",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 59
+  }
+}

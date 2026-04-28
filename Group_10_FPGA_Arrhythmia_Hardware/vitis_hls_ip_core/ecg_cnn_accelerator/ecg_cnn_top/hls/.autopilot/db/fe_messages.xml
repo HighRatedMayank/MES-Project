@@ -1,0 +1,249 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s1_seq_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s1_branch_A" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s1_branch_B" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s1_add_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:134:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s2_seq_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:158:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s2_branch_A" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:181:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s2_branch_B" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s2_add_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s3_conv_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:233:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s3_conv_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:255:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s4_conv_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:268:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="s4_conv_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:283:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="gap_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:297:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fc1_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:311:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fc2_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:323:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=logits complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:328:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:339:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ev complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=ecg_cnn_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input offset=slave bundle=INPUT_BUS depth=186" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:350:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output offset=slave bundle=OUTPUT_BUS depth=5" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:351:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:371:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=gap_out complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc1_out complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:373:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc2_out complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn.cpp:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecg_cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:46:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's1_seq_conv(float (*) [1], float (*) [8])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s1_seq_conv(float (*) [1], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 46 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:46:0" msg_body="Inlining function 'bn(float, float, float)' into 's1_seq_conv(float (*) [1], float (*) [8])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s1_seq_conv(float (*) [1], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 46 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:46:0" msg_body="Inlining function 'relu_f(float)' into 's1_seq_conv(float (*) [1], float (*) [8])'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="s1_seq_conv(float (*) [1], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 46 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:66:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's1_branch_A(float (*) [8], float (*) [8])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s1_branch_A(float (*) [8], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 66 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:66:0" msg_body="Inlining function 'bn(float, float, float)' into 's1_branch_A(float (*) [8], float (*) [8])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s1_branch_A(float (*) [8], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 66 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:89:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's1_branch_B(float (*) [8], float (*) [8])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s1_branch_B(float (*) [8], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 89 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:89:0" msg_body="Inlining function 'bn(float, float, float)' into 's1_branch_B(float (*) [8], float (*) [8])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s1_branch_B(float (*) [8], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 89 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:112:0" msg_body="Inlining function 'relu_f(float)' into 's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="s1_add_pool(float (*) [8], float (*) [8], float (*) [8])" Caller-DebugLoc="File cnn.cpp Line 112 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:126:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's2_seq_conv(float (*) [8], float (*) [16])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s2_seq_conv(float (*) [8], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 126 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:126:0" msg_body="Inlining function 'bn(float, float, float)' into 's2_seq_conv(float (*) [8], float (*) [16])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s2_seq_conv(float (*) [8], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 126 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:126:0" msg_body="Inlining function 'relu_f(float)' into 's2_seq_conv(float (*) [8], float (*) [16])'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="s2_seq_conv(float (*) [8], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 126 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:150:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's2_branch_A(float (*) [16], float (*) [16])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s2_branch_A(float (*) [16], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 150 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:150:0" msg_body="Inlining function 'bn(float, float, float)' into 's2_branch_A(float (*) [16], float (*) [16])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s2_branch_A(float (*) [16], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 150 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:173:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's2_branch_B(float (*) [16], float (*) [16])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s2_branch_B(float (*) [16], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 173 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:173:0" msg_body="Inlining function 'bn(float, float, float)' into 's2_branch_B(float (*) [16], float (*) [16])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s2_branch_B(float (*) [16], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 173 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:196:0" msg_body="Inlining function 'relu_f(float)' into 's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="s2_add_pool(float (*) [16], float (*) [16], float (*) [16])" Caller-DebugLoc="File cnn.cpp Line 196 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:210:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's3_conv_pool(float (*) [16], float (*) [32])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s3_conv_pool(float (*) [16], float (*) [32])" Caller-DebugLoc="File cnn.cpp Line 210 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:210:0" msg_body="Inlining function 'bn(float, float, float)' into 's3_conv_pool(float (*) [16], float (*) [32])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s3_conv_pool(float (*) [16], float (*) [32])" Caller-DebugLoc="File cnn.cpp Line 210 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:210:0" msg_body="Inlining function 'relu_f(float)' into 's3_conv_pool(float (*) [16], float (*) [32])'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="s3_conv_pool(float (*) [16], float (*) [32])" Caller-DebugLoc="File cnn.cpp Line 210 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:245:0" msg_body="Inlining function 'dq(signed char, float, int)' into 's4_conv_pool(float (*) [32], float (*) [64])'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="s4_conv_pool(float (*) [32], float (*) [64])" Caller-DebugLoc="File cnn.cpp Line 245 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:245:0" msg_body="Inlining function 'bn(float, float, float)' into 's4_conv_pool(float (*) [32], float (*) [64])'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="s4_conv_pool(float (*) [32], float (*) [64])" Caller-DebugLoc="File cnn.cpp Line 245 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:245:0" msg_body="Inlining function 'relu_f(float)' into 's4_conv_pool(float (*) [32], float (*) [64])'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="s4_conv_pool(float (*) [32], float (*) [64])" Caller-DebugLoc="File cnn.cpp Line 245 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:293:0" msg_body="Inlining function 'dq(signed char, float, int)' into 'fc1_layer(float*, float*)'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="fc1_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 293 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:293:0" msg_body="Inlining function 'bn(float, float, float)' into 'fc1_layer(float*, float*)'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="fc1_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 293 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:293:0" msg_body="Inlining function 'relu_f(float)' into 'fc1_layer(float*, float*)'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="fc1_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 293 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:307:0" msg_body="Inlining function 'dq(signed char, float, int)' into 'fc2_layer(float*, float*)'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="fc2_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 307 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:307:0" msg_body="Inlining function 'bn(float, float, float)' into 'fc2_layer(float*, float*)'">
+        <args Callee="bn(float, float, float)" Callee-DebugLoc="File cnn.cpp Line 40 Column 0" Caller="fc2_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 307 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:307:0" msg_body="Inlining function 'relu_f(float)' into 'fc2_layer(float*, float*)'">
+        <args Callee="relu_f(float)" Callee-DebugLoc="File cnn.cpp Line 36 Column 0" Caller="fc2_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 307 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:321:0" msg_body="Inlining function 'dq(signed char, float, int)' into 'output_layer(float*, float*)'">
+        <args Callee="dq(signed char, float, int)" Callee-DebugLoc="File cnn.cpp Line 37 Column 0" Caller="output_layer(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 321 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's1_seq_conv(float (*) [1], float (*) [8])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s1_seq_conv(float (*) [1], float (*) [8])" Callee-DebugLoc="File cnn.cpp Line 46 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's1_branch_A(float (*) [8], float (*) [8])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s1_branch_A(float (*) [8], float (*) [8])" Callee-DebugLoc="File cnn.cpp Line 66 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's1_branch_B(float (*) [8], float (*) [8])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s1_branch_B(float (*) [8], float (*) [8])" Callee-DebugLoc="File cnn.cpp Line 89 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's1_add_pool(float (*) [8], float (*) [8], float (*) [8])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s1_add_pool(float (*) [8], float (*) [8], float (*) [8])" Callee-DebugLoc="File cnn.cpp Line 112 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's2_seq_conv(float (*) [8], float (*) [16])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s2_seq_conv(float (*) [8], float (*) [16])" Callee-DebugLoc="File cnn.cpp Line 126 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's2_branch_A(float (*) [16], float (*) [16])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s2_branch_A(float (*) [16], float (*) [16])" Callee-DebugLoc="File cnn.cpp Line 150 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's2_branch_B(float (*) [16], float (*) [16])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s2_branch_B(float (*) [16], float (*) [16])" Callee-DebugLoc="File cnn.cpp Line 173 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's2_add_pool(float (*) [16], float (*) [16], float (*) [16])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s2_add_pool(float (*) [16], float (*) [16], float (*) [16])" Callee-DebugLoc="File cnn.cpp Line 196 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's3_conv_pool(float (*) [16], float (*) [32])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s3_conv_pool(float (*) [16], float (*) [32])" Callee-DebugLoc="File cnn.cpp Line 210 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 's4_conv_pool(float (*) [32], float (*) [64])' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="s4_conv_pool(float (*) [32], float (*) [64])" Callee-DebugLoc="File cnn.cpp Line 245 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 'gap_layer(float (*) [64], float*)' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="gap_layer(float (*) [64], float*)" Callee-DebugLoc="File cnn.cpp Line 279 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 'fc1_layer(float*, float*)' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="fc1_layer(float*, float*)" Callee-DebugLoc="File cnn.cpp Line 293 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 'fc2_layer(float*, float*)' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="fc2_layer(float*, float*)" Callee-DebugLoc="File cnn.cpp Line 307 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cpp:348:0" msg_body="Inlining function 'output_layer(float*, float*)' into 'ecg_cnn_top(float*, float*)'">
+        <args Callee="output_layer(float*, float*)" Callee-DebugLoc="File cnn.cpp Line 321 Column 0" Caller="ecg_cnn_top(float*, float*)" Caller-DebugLoc="File cnn.cpp Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cpp:368:0" msg_body="Applying array_partition to '_ZZ11ecg_cnn_topPfS_E7fc2_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11ecg_cnn_topPfS_E7fc2_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cpp:367:0" msg_body="Applying array_partition to '_ZZ11ecg_cnn_topPfS_E7fc1_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11ecg_cnn_topPfS_E7fc1_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cpp:366:0" msg_body="Applying array_partition to '_ZZ11ecg_cnn_topPfS_E7gap_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11ecg_cnn_topPfS_E7gap_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cpp:322:11" msg_body="Applying array_partition to 'logits.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="logits.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cpp:338:11" msg_body="Applying array_partition to 'ev.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="ev.i"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="./s1_conv_seq_w.h:14:0" msg_body="Automatically partitioning array '_ZL13s1_conv_seq_w' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="_ZL13s1_conv_seq_w"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="cnn.cpp:355:0" msg_body="Automatically partitioning array '_ZZ11ecg_cnn_topPfS_E5in_2d' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="_ZZ11ecg_cnn_topPfS_E5in_2d"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="./s1_conv_seq_w.h:14:0" msg_body="array_partition dim=2 type=complete  variable=_ZL13s1_conv_seq_w 1 ecg_cnn_top ./s1_conv_seq_w.h:14:0 s1_conv_seq_w">
+        <args PragmaFunction="ecg_cnn_top" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=_ZL13s1_conv_seq_w" PragmaType="array_partition" VarName="s1_conv_seq_w" varLoc="./s1_conv_seq_w.h:14:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="./s1_conv_seq_w.h:14:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 's1_conv_seq_w' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="s1_conv_seq_w" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn.cpp:355:0" msg_body="array_partition dim=2 type=complete  variable=_ZZ11ecg_cnn_topPfS_E5in_2d 1 ecg_cnn_top cnn.cpp:355:0 ecg_cnn_top(float*, float*)::in_2d">
+        <args PragmaFunction="ecg_cnn_top" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=_ZZ11ecg_cnn_topPfS_E5in_2d" PragmaType="array_partition" VarName="ecg_cnn_top(float*, float*)::in_2d" varLoc="cnn.cpp:355:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn.cpp:355:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'ecg_cnn_top(float*, float*)::in_2d' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="ecg_cnn_top(float*, float*)::in_2d" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cpp:355:0" msg_body="Applying array_partition to '_ZZ11ecg_cnn_topPfS_E5in_2d': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZZ11ecg_cnn_topPfS_E5in_2d"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./s1_conv_seq_w.h:14:0" msg_body="Applying array_partition to '_ZL13s1_conv_seq_w': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL13s1_conv_seq_w"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

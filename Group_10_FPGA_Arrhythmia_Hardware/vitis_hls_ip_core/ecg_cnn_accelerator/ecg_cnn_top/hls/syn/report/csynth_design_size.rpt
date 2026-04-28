@@ -1,0 +1,92 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 1,226        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 1,022        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   829        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   679        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   676        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 1,221        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 1,178        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 1,178        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 1,178        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 1,208        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 1,206        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 1,175        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 1,171        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 1,171        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 1,179        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 1,356        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-----------------+-------------+----------------+---------------+--------------+-------------+---------------+
+| Function        | Location    | Compile/Link   | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++-----------------+-------------+----------------+---------------+--------------+-------------+---------------+
+| + ecg_cnn_top   | cnn.cpp:348 | 1,226          | 676           | 1,208        | 1,171       | 1,356         |
+|  + s1_seq_conv  | cnn.cpp:46  |   78           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |    6           |               |              |             |               |
+|  + s1_branch_A  | cnn.cpp:66  |   82           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|  + s1_branch_B  | cnn.cpp:89  |   82           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|  + s1_add_pool  | cnn.cpp:112 |   71           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |   12 (2 calls) |               |              |             |               |
+|  + s2_seq_conv  | cnn.cpp:126 |   89           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |    6           |               |              |             |               |
+|  + s2_branch_A  | cnn.cpp:150 |   82           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|  + s2_branch_B  | cnn.cpp:173 |   82           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|  + s2_add_pool  | cnn.cpp:196 |   71           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |   12 (2 calls) |               |              |             |               |
+|  + s3_conv_pool | cnn.cpp:210 |  135           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |    6           |               |              |             |               |
+|  + s4_conv_pool | cnn.cpp:245 |  135           |               |              |             |               |
+|     dq          | cnn.cpp:37  |    5           |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |    6           |               |              |             |               |
+|    gap_layer    | cnn.cpp:279 |   30           |               |              |             |               |
+|  + fc1_layer    | cnn.cpp:293 |   65           |               |              |             |               |
+|     dq          | cnn.cpp:37  |   10 (2 calls) |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |    6           |               |              |             |               |
+|  + fc2_layer    | cnn.cpp:307 |   65           |               |              |             |               |
+|     dq          | cnn.cpp:37  |   10 (2 calls) |               |              |             |               |
+|     bn          | cnn.cpp:40  |    3           |               |              |             |               |
+|     relu_f      | cnn.cpp:36  |    6           |               |              |             |               |
+|  + output_layer | cnn.cpp:321 |  122           |               |              |             |               |
+|     dq          | cnn.cpp:37  |   10 (2 calls) |               |              |             |               |
++-----------------+-------------+----------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

@@ -1,0 +1,466 @@
+{
+    "1": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_254_4",
+        "file": "cnn.cpp",
+        "fileloc": "394",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_341_5",
+        "file": "cnn.cpp",
+        "fileloc": "398",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3",
+        "file": "cnn.cpp",
+        "fileloc": "383",
+        "instructions": "95",
+        "total_instructions": "95",
+        "calls": "",
+        "basicblocks": "6",
+        "memory_accesses": "17",
+        "control_depth": "2",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "4",
+            "L": "6"
+        },
+        "stores": {
+            "G": "1",
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_113_1_VITIS_LOOP_114_2",
+        "file": "cnn.cpp",
+        "fileloc": "386",
+        "instructions": "82",
+        "total_instructions": "82",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "11",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "4",
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_219_4",
+        "file": "cnn.cpp",
+        "fileloc": "393",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_282_2",
+        "file": "cnn.cpp",
+        "fileloc": "395",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "5",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_266_5_VITIS_LOOP_267_6",
+        "file": "cnn.cpp",
+        "fileloc": "394",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "10",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_231_5_VITIS_LOOP_232_6",
+        "file": "cnn.cpp",
+        "fileloc": "393",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "10",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_133_4",
+        "file": "cnn.cpp",
+        "fileloc": "388",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_157_4",
+        "file": "cnn.cpp",
+        "fileloc": "389",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_310_2",
+        "file": "cnn.cpp",
+        "fileloc": "397",
+        "instructions": "98",
+        "total_instructions": "98",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "5",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_180_4",
+        "file": "cnn.cpp",
+        "fileloc": "390",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_96_4",
+        "file": "cnn.cpp",
+        "fileloc": "385",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_377_1",
+        "file": "cnn.cpp",
+        "fileloc": "377",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_197_1_VITIS_LOOP_198_2",
+        "file": "cnn.cpp",
+        "fileloc": "391",
+        "instructions": "82",
+        "total_instructions": "82",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "11",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "4",
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2",
+        "file": "cnn.cpp",
+        "fileloc": "398",
+        "instructions": "168",
+        "total_instructions": "168",
+        "calls": "",
+        "basicblocks": "13",
+        "memory_accesses": "51",
+        "control_depth": "3",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "2",
+            "L": "19"
+        },
+        "stores": {
+            "L": "43"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_73_4",
+        "file": "cnn.cpp",
+        "fileloc": "384",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_336_3",
+        "file": "cnn.cpp",
+        "fileloc": "398",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_340_4",
+        "file": "cnn.cpp",
+        "fileloc": "398",
+        "instructions": "55",
+        "total_instructions": "55",
+        "calls": "",
+        "basicblocks": "10",
+        "memory_accesses": "10",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "ecg_cnn_top",
+        "file": "cnn.cpp",
+        "fileloc": "348",
+        "instructions": "1052",
+        "total_instructions": "2256",
+        "calls": "14 3 17 13 4 9 10 12 15 5 8 1 7 6 20 11 16 18 19 2",
+        "basicblocks": "250",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "180",
+            "L": "32"
+        },
+        "stores": {
+            "G": "165",
+            "L": "22"
+        },
+        "loops": {
+            "L": "10",
+            "N": "14"
+        }
+    },
+    "20": {
+        "name": "ecg_cnn_top_Pipeline_VITIS_LOOP_296_2",
+        "file": "cnn.cpp",
+        "fileloc": "396",
+        "instructions": "98",
+        "total_instructions": "98",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "5",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

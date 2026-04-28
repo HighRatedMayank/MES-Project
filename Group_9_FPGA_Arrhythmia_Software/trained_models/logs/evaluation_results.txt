@@ -1,0 +1,31 @@
+============================================================
+PHASE 2 — EVALUATION RESULTS
+============================================================
+
+Test Accuracy  : 93.6507%
+Test Loss      : 0.1826
+F1 Weighted    : 0.9478
+F1 Macro       : 0.7688
+Epochs trained : 84
+Best epoch     : 64
+
+                  precision    recall  f1-score   support
+
+          Normal     0.9967    0.9306    0.9625     18118
+Supraventricular     0.4267    0.9155    0.5820       556
+     Ventricular     0.9166    0.9565    0.9361      1448
+          Fusion     0.2463    0.9136    0.3879       162
+         Unknown     0.9575    0.9944    0.9756      1608
+
+        accuracy                         0.9365     21892
+       macro avg     0.7087    0.9421    0.7688     21892
+    weighted avg     0.9685    0.9365    0.9478     21892
+
+Per-class metrics:
+Class                 Precision     Recall         F1
+-------------------------------------------------------
+Normal                   0.9967     0.9306     0.9625
+Supraventricular         0.4267     0.9155     0.5820
+Ventricular              0.9166     0.9565     0.9361
+Fusion                   0.2463     0.9136     0.3879
+Unknown                  0.9575     0.9944     0.9756

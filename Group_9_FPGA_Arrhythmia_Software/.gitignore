@@ -1,0 +1,16 @@
+# Unnecessary files
+phase3_tflite/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Vivado / HLS temp files
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+.Xil/
+*.csv
+*.npy

@@ -1,0 +1,2211 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 54, Column: 28 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 57, Column: 33 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 57, Column: 26 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 76, Column: 32 }
+Function:        _Z11s1_branch_APA8_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 81, Column: 26 }
+Function:        _Z11s1_branch_APA8_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 99, Column: 32 }
+Function:        _Z11s1_branch_BPA8_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 104, Column: 26 }
+Function:        _Z11s1_branch_BPA8_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 116, Column: 13 }
+Function:        _Z11s1_add_poolPA8_fS0_S0_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 136, Column: 32 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 141, Column: 33 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 141, Column: 26 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 160, Column: 32 }
+Function:        _Z11s2_branch_APA16_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 165, Column: 26 }
+Function:        _Z11s2_branch_APA16_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 183, Column: 32 }
+Function:        _Z11s2_branch_BPA16_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 188, Column: 26 }
+Function:        _Z11s2_branch_BPA16_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 200, Column: 13 }
+Function:        _Z11s2_add_poolPA16_fS0_S0_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 222, Column: 32 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 227, Column: 33 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 227, Column: 26 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 257, Column: 32 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 262, Column: 33 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 262, Column: 26 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 295, Column: 21 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 300, Column: 25 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 300, Column: 18 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 309, Column: 21 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 314, Column: 25 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 314, Column: 18 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 326, Column: 21 }
+Function:        _Z12output_layerPfS_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'output_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 383, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 384, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 385, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 386, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 388, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 389, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 390, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 391, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 393, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 394, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 395, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'gap_layer(float (*) [64], float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 279, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 396, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 397, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 398, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'output_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 54, Column: 28 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 57, Column: 33 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 57, Column: 26 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 76, Column: 32 }
+Function:        _Z11s1_branch_APA8_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 81, Column: 26 }
+Function:        _Z11s1_branch_APA8_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 99, Column: 32 }
+Function:        _Z11s1_branch_BPA8_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 104, Column: 26 }
+Function:        _Z11s1_branch_BPA8_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 116, Column: 13 }
+Function:        _Z11s1_add_poolPA8_fS0_S0_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 136, Column: 32 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 141, Column: 33 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 141, Column: 26 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 160, Column: 32 }
+Function:        _Z11s2_branch_APA16_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 165, Column: 26 }
+Function:        _Z11s2_branch_APA16_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 183, Column: 32 }
+Function:        _Z11s2_branch_BPA16_fS0_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 188, Column: 26 }
+Function:        _Z11s2_branch_BPA16_fS0_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 200, Column: 13 }
+Function:        _Z11s2_add_poolPA16_fS0_S0_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 222, Column: 32 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 227, Column: 33 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 227, Column: 26 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 257, Column: 32 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 262, Column: 33 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 262, Column: 26 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 295, Column: 21 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 300, Column: 25 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 300, Column: 18 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 309, Column: 21 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 314, Column: 25 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 314, Column: 18 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 326, Column: 21 }
+Function:        _Z12output_layerPfS_
+Args:            
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'output_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 383, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 384, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 385, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 386, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 388, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 389, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 390, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 391, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 393, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 394, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 395, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'gap_layer(float (*) [64], float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 279, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 396, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 397, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn.cpp, Line: 398, Column: 5 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - Callee:          'output_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_ecg_cnn_top_ir
+Args:            
+  - Callee:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_ecg_cnn_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+Function:        _Z11s1_seq_convPA1_fPA8_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+Function:        _Z11s1_branch_APA8_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+Function:        _Z11s1_branch_APA8_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+Function:        _Z11s1_branch_BPA8_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+Function:        _Z11s1_branch_BPA8_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+Function:        _Z11s1_add_poolPA8_fS0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+Function:        _Z11s2_seq_convPA8_fPA16_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+Function:        _Z11s2_branch_APA16_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+Function:        _Z11s2_branch_APA16_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+Function:        _Z11s2_branch_BPA16_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+Function:        _Z11s2_branch_BPA16_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+Function:        _Z11s2_add_poolPA16_fS0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+Function:        _Z12s3_conv_poolPA16_fPA32_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+Function:        _Z12s4_conv_poolPA32_fPA64_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+Function:        _Z9fc1_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn(float, float, float)'
+    DebugLoc:        { File: cnn.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+Function:        _Z9fc2_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu_f(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+Function:        _Z12output_layerPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dq(signed char, float, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's1_seq_conv(float (*) [1], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's1_branch_A(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 66, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's1_branch_B(float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 89, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's1_add_pool(float (*) [8], float (*) [8], float (*) [8])'
+    DebugLoc:        { File: cnn.cpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's2_seq_conv(float (*) [8], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 126, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's2_branch_A(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 150, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's2_branch_B(float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 173, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's2_add_pool(float (*) [16], float (*) [16], float (*) [16])'
+    DebugLoc:        { File: cnn.cpp, Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's3_conv_pool(float (*) [16], float (*) [32])'
+    DebugLoc:        { File: cnn.cpp, Line: 210, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          's4_conv_pool(float (*) [32], float (*) [64])'
+    DebugLoc:        { File: cnn.cpp, Line: 245, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'gap_layer(float (*) [64], float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 279, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fc1_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 293, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fc2_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 307, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'output_layer(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 321, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 368, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11ecg_cnn_topPfS_E7fc2_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 367, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11ecg_cnn_topPfS_E7fc1_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 366, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11ecg_cnn_topPfS_E7gap_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 322, Column: 11 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          logits.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 338, Column: 11 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ev.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn.cpp, Line: 377, Column: 20 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '186'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input184seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      INPUT_BUS
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_377_1
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:377:20'
+  - String:          ' '
+  - Function:        'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn.cpp, Line: 379, Column: 16 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn.cpp, Line: 341, Column: 23 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '5'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output185seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      OUTPUT_BUS
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_341_5
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:341:23'
+  - String:          ' '
+  - Function:        'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: cnn.cpp, Line: 341, Column: 58 }
+  - OrigDirection:   write
+  - OrigID:          for.inc55.i.store.6
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: cnn.cpp, Line: 341, Column: 23 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn.cpp, Line: 341, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          output185seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      OUTPUT_BUS
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_341_5
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:341:23'
+  - String:          ' '
+  - Function:        'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: cnn.cpp, Line: 377, Column: 20 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn.cpp, Line: 377, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          input184seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      INPUT_BUS
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_377_1
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:377:20'
+  - String:          ' '
+  - Function:        'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         ''
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_336_3
+  - String:          '> at '
+  - LoopLoc:         'cnn.cpp:336:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_340_4
+  - String:          '> at '
+  - LoopLoc:         'cnn.cpp:340:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_341_5
+  - String:          '> at '
+  - LoopLoc:         'cnn.cpp:341:23'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ./s1_conv_seq_w.h, Line: 14, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL13s1_conv_seq_w
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: cnn.cpp, Line: 355, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZZ11ecg_cnn_topPfS_E5in_2d
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ./s1_conv_seq_w.h, Line: 14, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=_ZL13s1_conv_seq_w'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ecg_cnn_top
+  - String:          ' '
+  - varLoc:          './s1_conv_seq_w.h:14:0'
+  - String:          ' '
+  - VarName:         s1_conv_seq_w
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ./s1_conv_seq_w.h, Line: 14, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            s1_conv_seq_w
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn.cpp, Line: 355, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=_ZZ11ecg_cnn_topPfS_E5in_2d'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ecg_cnn_top
+  - String:          ' '
+  - varLoc:          'cnn.cpp:355:0'
+  - String:          ' '
+  - VarName:         'ecg_cnn_top(float*, float*)::in_2d'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 355, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            'ecg_cnn_top(float*, float*)::in_2d'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn.cpp, Line: 355, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11ecg_cnn_topPfS_E5in_2d
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./s1_conv_seq_w.h, Line: 14, Column: 0 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL13s1_conv_seq_w
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn.cpp, Line: 377, Column: 20 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '186'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      INPUT_BUS
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_377_1
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:377:20'
+  - String:          ' '
+  - Function:        'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn.cpp, Line: 377, Column: 20 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '186'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_377_1
+  - String:          '''('
+  - LoopLoc:         'cnn.cpp:377:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      INPUT_BUS
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn.cpp, Line: 341, Column: 23 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '5'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      OUTPUT_BUS
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_341_5
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:341:23'
+  - String:          ' '
+  - Function:        'ecg_cnn_top(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 348, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn.cpp, Line: 341, Column: 23 }
+Function:        _Z11ecg_cnn_topPfS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '5'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_341_5
+  - String:          '''('
+  - LoopLoc:         'cnn.cpp:341:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      OUTPUT_BUS
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

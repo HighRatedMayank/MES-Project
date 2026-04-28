@@ -1,0 +1,414 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Apr 11 10:30:10 2026
+# Process ID         : 1124
+# Current directory  : C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1
+# Command line       : vivado.exe -log ecg_system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ecg_system_wrapper.tcl
+# Log file           : C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/ecg_system_wrapper.vds
+# Journal file       : C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-OKS7HGU
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 1382 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8320 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 17447 MB
+# Available Virtual  : 5048 MB
+#-----------------------------------------------------------
+source ecg_system_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 497.797 ; gain = 212.375
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 541.551 ; gain = 39.828
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/utils_1/imports/synth_1/ecg_system_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/utils_1/imports/synth_1/ecg_system_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ecg_system_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13928
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1287.391 ; gain = 494.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_wrapper' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/hdl/ecg_system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_gpio_0_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_gpio_0_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_gpio_1_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_gpio_1_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_mem_intercon_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:678]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CJTJ3V' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1247]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CJTJ3V' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1247]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1KT68MY' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1488]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_pc_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_pc_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_us_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_us_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1KT68MY' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1488]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1B4JS70' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1692]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_pc_1' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_pc_1' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_wid' of module 'ecg_system_axi_mem_intercon_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1842]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ecg_system_axi_mem_intercon_imp_auto_pc_1' has 44 connections declared, but only 43 given [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1842]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_us_1' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_mem_intercon_imp_auto_us_1' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1B4JS70' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1692]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_mem_intercon_imp_xbar_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_mem_intercon_imp_xbar_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_mem_intercon_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'ecg_system_axi_mem_intercon_imp_xbar_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1217]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'ecg_system_axi_mem_intercon_imp_xbar_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1234]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'ecg_system_axi_mem_intercon_imp_xbar_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1235]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'ecg_system_axi_mem_intercon_imp_xbar_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1237]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'ecg_system_axi_mem_intercon_imp_xbar_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1238]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'ecg_system_axi_mem_intercon_imp_xbar_0' is unconnected for instance 'xbar' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1168]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'ecg_system_axi_mem_intercon_imp_xbar_0' is unconnected for instance 'xbar' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1168]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'ecg_system_axi_mem_intercon_imp_xbar_0' has 78 connections declared, but only 76 given [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:1168]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_mem_intercon_0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:678]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_axi_smc_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_axi_smc_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'ecg_system_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'ecg_system_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'ecg_system_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'ecg_system_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'ecg_system_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'ecg_system_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'ecg_system_axi_smc_0' has 97 connections declared, but only 91 given [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:400]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_ecg_cnn_top_0_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_ecg_cnn_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_ecg_cnn_top_0_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_ecg_cnn_top_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWADDR' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWBURST' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWCACHE' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWLEN' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWLOCK' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWPROT' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWQOS' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWREGION' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWSIZE' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_AWVALID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_BREADY' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_WDATA' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_WID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_WLAST' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_WSTRB' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_INPUT_BUS_WVALID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARADDR' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARBURST' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARCACHE' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARLEN' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARLOCK' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARPROT' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARQOS' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARREGION' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARSIZE' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_ARVALID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_RREADY' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7071] port 'm_axi_OUTPUT_BUS_WID' of module 'ecg_system_ecg_cnn_top_0_0' is unconnected for instance 'ecg_cnn_top_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+WARNING: [Synth 8-7023] instance 'ecg_cnn_top_0' of module 'ecg_system_ecg_cnn_top_0_0' has 100 connections declared, but only 70 given [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:492]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_processing_system7_0_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_processing_system7_0_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'ecg_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'ecg_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'ecg_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'ecg_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'ecg_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'ecg_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'ecg_system_processing_system7_0_0' has 111 connections declared, but only 105 given [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:563]
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_rst_ps7_0_100M_0' [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_rst_ps7_0_100M_0' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/.Xil/Vivado-1124-DESKTOP-OKS7HGU/realtime/ecg_system_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ecg_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:669]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ecg_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:669]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ecg_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:669]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ecg_system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:669]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'ecg_system_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:669]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/synth/ecg_system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_system_wrapper' (0#1) [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/hdl/ecg_system_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1B4JS70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1B4JS70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s01_couplers_imp_1B4JS70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1KT68MY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1KT68MY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s00_couplers_imp_1KT68MY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1CJTJ3V is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1CJTJ3V is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1CJTJ3V is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1CJTJ3V is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1407.488 ; gain = 614.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1407.488 ; gain = 614.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1407.488 ; gain = 614.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1407.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_processing_system7_0_0/ecg_system_processing_system7_0_0/ecg_system_processing_system7_0_0_in_context.xdc] for cell 'ecg_system_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_processing_system7_0_0/ecg_system_processing_system7_0_0/ecg_system_processing_system7_0_0_in_context.xdc] for cell 'ecg_system_i/processing_system7_0'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/ecg_system_ecg_cnn_top_0_0/ecg_system_ecg_cnn_top_0_0_in_context.xdc] for cell 'ecg_system_i/ecg_cnn_top_0'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/ecg_system_ecg_cnn_top_0_0/ecg_system_ecg_cnn_top_0_0_in_context.xdc] for cell 'ecg_system_i/ecg_cnn_top_0'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_smc_0/ecg_system_axi_smc_0/ecg_system_axi_smc_0_in_context.xdc] for cell 'ecg_system_i/axi_smc'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_smc_0/ecg_system_axi_smc_0/ecg_system_axi_smc_0_in_context.xdc] for cell 'ecg_system_i/axi_smc'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_rst_ps7_0_100M_0/ecg_system_rst_ps7_0_100M_0/ecg_system_rst_ps7_0_100M_0_in_context.xdc] for cell 'ecg_system_i/rst_ps7_0_100M'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_rst_ps7_0_100M_0/ecg_system_rst_ps7_0_100M_0/ecg_system_rst_ps7_0_100M_0_in_context.xdc] for cell 'ecg_system_i/rst_ps7_0_100M'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_xbar_0/ecg_system_axi_mem_intercon_imp_xbar_0/ecg_system_axi_mem_intercon_imp_xbar_0_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_xbar_0/ecg_system_axi_mem_intercon_imp_xbar_0/ecg_system_axi_mem_intercon_imp_xbar_0_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/xbar'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_pc_0/ecg_system_axi_mem_intercon_imp_auto_pc_0/ecg_system_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_pc_0/ecg_system_axi_mem_intercon_imp_auto_pc_0/ecg_system_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_us_0/ecg_system_axi_mem_intercon_imp_auto_us_0/ecg_system_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_us_0/ecg_system_axi_mem_intercon_imp_auto_us_0/ecg_system_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_pc_1/ecg_system_axi_mem_intercon_imp_auto_pc_1/ecg_system_axi_mem_intercon_imp_auto_pc_1_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_pc_1/ecg_system_axi_mem_intercon_imp_auto_pc_1/ecg_system_axi_mem_intercon_imp_auto_pc_1_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s01_couplers/auto_pc'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_us_1/ecg_system_axi_mem_intercon_imp_auto_us_1/ecg_system_axi_mem_intercon_imp_auto_us_1_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_mem_intercon_imp_auto_us_1/ecg_system_axi_mem_intercon_imp_auto_us_1/ecg_system_axi_mem_intercon_imp_auto_us_1_in_context.xdc] for cell 'ecg_system_i/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_gpio_0_0/ecg_system_axi_gpio_0_0/ecg_system_axi_gpio_0_0_in_context.xdc] for cell 'ecg_system_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_gpio_0_0/ecg_system_axi_gpio_0_0/ecg_system_axi_gpio_0_0_in_context.xdc] for cell 'ecg_system_i/axi_gpio_0'
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_gpio_1_0/ecg_system_axi_gpio_1_0/ecg_system_axi_gpio_1_0_in_context.xdc] for cell 'ecg_system_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_axi_gpio_1_0/ecg_system_axi_gpio_1_0/ecg_system_axi_gpio_1_0_in_context.xdc] for cell 'ecg_system_i/axi_gpio_1'
+Parsing XDC File [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc]
+WARNING: [Vivado 12-584] No ports matched 'FCLK_CLK0'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_0[0]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_0[1]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_0[2]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_0[3]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_0[*]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[0]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[1]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[2]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[3]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[4]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[5]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_1[*]'. [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc:18]
+Finished Parsing XDC File [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.srcs/constrs_1/new/timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ecg_system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1437.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1437.828 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 1437.828 ; gain = 644.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:01:09 . Memory (MB): peak = 1437.828 ; gain = 644.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1437.828 ; gain = 644.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 1437.828 ; gain = 644.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[5] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[2] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[1] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[5] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[2] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[1] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_AXI_arlock[1] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awlock[1] in module ecg_system_axi_mem_intercon_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:19 . Memory (MB): peak = 1437.828 ; gain = 644.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 1589.367 ; gain = 796.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 1590.367 ; gain = 797.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 1600.863 ; gain = 807.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |ecg_system_axi_gpio_0_0                   |         1|
+|2     |ecg_system_axi_gpio_1_0                   |         1|
+|3     |ecg_system_axi_mem_intercon_imp_xbar_0    |         1|
+|4     |ecg_system_axi_mem_intercon_imp_auto_pc_0 |         1|
+|5     |ecg_system_axi_mem_intercon_imp_auto_us_0 |         1|
+|6     |ecg_system_axi_mem_intercon_imp_auto_pc_1 |         1|
+|7     |ecg_system_axi_mem_intercon_imp_auto_us_1 |         1|
+|8     |ecg_system_axi_smc_0                      |         1|
+|9     |ecg_system_ecg_cnn_top_0_0                |         1|
+|10    |ecg_system_processing_system7_0_0         |         1|
+|11    |ecg_system_rst_ps7_0_100M_0               |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |ecg_system_axi_gpio_0                   |     1|
+|2     |ecg_system_axi_gpio_1                   |     1|
+|3     |ecg_system_axi_mem_intercon_imp_auto_pc |     2|
+|5     |ecg_system_axi_mem_intercon_imp_auto_us |     2|
+|7     |ecg_system_axi_mem_intercon_imp_xbar    |     1|
+|8     |ecg_system_axi_smc                      |     1|
+|9     |ecg_system_ecg_cnn_top_0                |     1|
+|10    |ecg_system_processing_system7_0         |     1|
+|11    |ecg_system_rst_ps7_0_100M               |     1|
+|12    |IOBUF                                   |    10|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:52 . Memory (MB): peak = 1834.715 ; gain = 1011.414
+Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:02:05 . Memory (MB): peak = 1834.715 ; gain = 1041.754
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1834.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1841.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+
+Synth Design complete | Checksum: 36a162ab
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:57 . Memory (MB): peak = 1841.023 ; gain = 1279.066
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1841.023 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/synth_1/ecg_system_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ecg_system_wrapper_utilization_synth.rpt -pb ecg_system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 10:33:39 2026...

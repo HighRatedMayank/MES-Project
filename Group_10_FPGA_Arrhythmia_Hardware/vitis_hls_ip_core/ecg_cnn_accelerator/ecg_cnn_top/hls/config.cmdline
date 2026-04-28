@@ -1,0 +1,3 @@
+relativeroot=C:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator
+original_argv=--mode hls --csim --config C:\Users\Public\Downloads\ecg_cnn_accelerator\ecg_cnn_accelerator\hls_config.cfg --work_dir ecg_cnn_top 
+

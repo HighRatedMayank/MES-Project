@@ -1,0 +1,1384 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Apr  1 01:05:46 2026
+# Process ID         : 20708
+# Current directory  : C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1
+# Command line       : vivado.exe -log ecg_system_ecg_cnn_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ecg_system_ecg_cnn_top_0_0.tcl
+# Log file           : C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1/ecg_system_ecg_cnn_top_0_0.vds
+# Journal file       : C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1\vivado.jou
+# Running On         : DESKTOP-OKS7HGU
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 1382 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8320 MB
+# Swap memory        : 11642 MB
+# Total Virtual      : 19963 MB
+# Available Virtual  : 6461 MB
+#-----------------------------------------------------------
+source ecg_system_ecg_cnn_top_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 498.676 ; gain = 214.082
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Downloads/ecg_cnn_accelerator/ecg_cnn_accelerator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top ecg_system_ecg_cnn_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17436
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1236.609 ; gain = 491.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ecg_system_ecg_cnn_top_0_0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/synth/ecg_system_ecg_cnn_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_float_float_in_2d_2_RAM_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_float_float_in_2d_2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_float_float_in_2d_2_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_float_float_in_2d_2_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_float_float_in_2d_2_RAM_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_float_float_in_2d_2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_seq_out_RAM_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_seq_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_seq_out_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_seq_out_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_seq_out_RAM_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_seq_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_bn_A_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_A_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_bn_A_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_A_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_bn_A_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_A_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_bn_A_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_A_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_bn_A_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_A_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_bn_A_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_A_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_A_out_RAM_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_A_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_A_out_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_A_out_RAM_AUTO_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_A_out_RAM_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_A_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_pool_RAM_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_pool_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_pool_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_pool_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_pool_RAM_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_pool_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_bn_B_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_B_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_bn_B_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_B_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_bn_B_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_B_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s1_bn_B_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_B_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s1_bn_B_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_B_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s1_bn_B_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s1_bn_B_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_bn_seq_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_seq_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_bn_seq_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_seq_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_bn_seq_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_seq_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_bn_seq_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_seq_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_bn_seq_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_seq_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_bn_seq_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_seq_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_bn_A_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_A_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_bn_A_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_A_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_bn_A_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_A_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_bn_A_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_A_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_bn_A_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_A_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_bn_A_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_A_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_pool_RAM_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_pool_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_pool_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_pool_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_pool_RAM_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_pool_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_bn_B_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_B_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_bn_B_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_B_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_bn_B_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_B_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s2_bn_B_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_B_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s2_bn_B_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_B_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s2_bn_B_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s2_bn_B_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s3_bn_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s3_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s3_bn_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s3_bn_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s3_bn_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s3_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s3_bn_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s3_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s3_bn_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s3_bn_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s3_bn_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s3_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s4_out_RAM_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s4_out_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_out_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s4_out_RAM_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s4_bn_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s4_bn_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_bn_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s4_bn_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_s4_bn_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_s4_bn_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_bn_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_s4_bn_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_s4_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fc1_b_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_fc1_b_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_b_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fc1_b_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fc1_bn_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_fc1_bn_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_bn_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fc1_bn_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fc1_bn_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_fc1_bn_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_bn_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fc1_bn_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc1_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fc2_b_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_fc2_b_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_b_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fc2_b_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fc2_bn_scale_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_fc2_bn_scale_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_bn_scale_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fc2_bn_scale_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_bn_scale_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fc2_bn_bias_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_fc2_bn_bias_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_bn_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fc2_bn_bias_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fc2_bn_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_tmp_RAM_1WNR_AUTO_1R1W' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_tmp_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_tmp_RAM_1WNR_AUTO_1R1W' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_tmp_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_377_1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_377_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_flow_control_loop_pipe_sequential_init' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_377_1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_377_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_conv_bkb' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_conv_bkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_conv_bkb.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_conv_bkb.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_conv_bkb' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_conv_bkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_secud' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_secud.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_secud.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_secud.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_secud' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_secud.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_sedEe' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_sedEe.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_sedEe.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_sedEe.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_sedEe' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3_s1_bn_sedEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_s1_conv_A_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_s1_conv_A_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_s1_conv_A_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_s1_conv_A_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_s1_conv_A_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_s1_conv_A_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_113_1_VITIS_LOOP_114_2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_113_1_VITIS_LOOP_114_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_113_1_VITIS_LOOP_114_2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_113_1_VITIS_LOOP_114_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_s1_conv_B_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_s1_conv_B_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_s1_conv_B_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_s1_conv_B_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_s1_conv_B_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_s1_conv_B_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_s2_conv_seq_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_s2_conv_seq_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_s2_conv_seq_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_s2_conv_seq_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_s2_conv_seq_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_s2_conv_seq_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_s2_conv_A_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_s2_conv_A_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_s2_conv_A_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_s2_conv_A_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_s2_conv_A_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_s2_conv_A_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_197_1_VITIS_LOOP_198_2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_197_1_VITIS_LOOP_198_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_197_1_VITIS_LOOP_198_2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_197_1_VITIS_LOOP_198_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_s2_conv_B_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_s2_conv_B_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_s2_conv_B_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_s2_conv_B_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_s2_conv_B_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_s2_conv_B_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_231_5_VITIS_LOOP_232_6' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_231_5_VITIS_LOOP_232_6.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_231_5_VITIS_LOOP_232_6' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_231_5_VITIS_LOOP_232_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_s3_conv_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_s3_conv_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_s3_conv_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_s3_conv_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_s3_conv_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_s3_conv_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_266_5_VITIS_LOOP_267_6' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_266_5_VITIS_LOOP_267_6.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_266_5_VITIS_LOOP_267_6' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_266_5_VITIS_LOOP_267_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_s4_conv_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_s4_conv_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_s4_conv_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_s4_conv_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_s4_conv_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_s4_conv_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_282_2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_282_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_282_2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_282_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fc1_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fc1_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fc1_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fc1_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fc1_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fc1_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_sparsemux_129_6_32_1_1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_129_6_32_1_1.v:8]
+INFO: [Synth 8-226] default block is never used [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_129_6_32_1_1.v:414]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_sparsemux_129_6_32_1_1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_129_6_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_b_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_b_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_b_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_b_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_output_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_sparsemux_65_5_32_1_1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_65_5_32_1_1.v:8]
+INFO: [Synth 8-226] default block is never used [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_65_5_32_1_1.v:222]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_sparsemux_65_5_32_1_1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_65_5_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fc2_w_ROM_AUTO_1R' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fc2_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fc2_w_ROM_AUTO_1R.dat' is read successfully [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fc2_w_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fc2_w_ROM_AUTO_1R' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fc2_w_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_336_3' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_336_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_sparsemux_9_3_32_1_1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_9_3_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_sparsemux_9_3_32_1_1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_9_3_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_336_3' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_336_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip/synth/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 1 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip/synth/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip.vhd:211]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip/synth/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_sparsemux_11_3_32_1_1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_11_3_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_sparsemux_11_3_32_1_1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_sparsemux_11_3_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_341_5' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_341_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_341_5' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_341_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_control_s_axi' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_control_s_axi.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_control_s_axi' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_load' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_fifo' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_srl' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_srl' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_fifo' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_fifo__parameterized0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_mem' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_mem' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_fifo__parameterized0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_load' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_read' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:782]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_fifo__parameterized1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_srl__parameterized0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_srl__parameterized0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_fifo__parameterized1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_burst_converter' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_burst_sequential' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1642]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_burst_sequential' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1642]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_burst_converter' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice__parameterized0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice__parameterized0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi_read' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_INPUT_BUS_m_axi' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_INPUT_BUS_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_store' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized0' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized1' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized2' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized2' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized3' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized3' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized3' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized3' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_store' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_write' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:1099]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_burst_converter' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_burst_sequential' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2000]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_burst_sequential' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2000]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_burst_converter' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_throttle' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2353]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_srl__parameterized4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_fifo__parameterized4' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2726]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized0' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized1' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_cnn_top_OUTPUT_BUS_m_axi_throttle' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2353]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/synth/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/synth/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:223]
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/synth/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip/synth/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip/synth/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip/synth/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/synth/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/synth/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/synth/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip/synth/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip/synth/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip' (0#1) [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/hdl/ip/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip/synth/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip.vhd:72]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_control_s_axi.v:288]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized135 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized135 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized135 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized135 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized135 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized133 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized133 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized133 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized133 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized133 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[12] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[11] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[10] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[9] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[8] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[7] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[6] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[5] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[4] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[3] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[2] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[1] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tuser[0] in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tlast in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tready in module floating_point_v7_1_20_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.945 ; gain = 894.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 1639.945 ; gain = 894.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 1639.945 ; gain = 894.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.997 . Memory (MB): peak = 1639.945 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1940 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/constraints/ecg_cnn_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ip/ecg_system_ecg_cnn_top_0_0/constraints/ecg_cnn_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1714.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FDE => FDRE: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.744 . Memory (MB): peak = 1731.207 ; gain = 17.102
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.207 ; gain = 985.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.207 ; gain = 985.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.207 ; gain = 985.879
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln48_reg_656_reg' and it is trimmed from '4' to '3' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_ecg_cnn_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_50_3.v:609]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'ecg_cnn_top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'ecg_cnn_top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized2'
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln214_reg_6110_reg' and it is trimmed from '6' to '5' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4691]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln175_reg_6017_reg' and it is trimmed from '5' to '4' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4666]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln152_reg_5924_reg' and it is trimmed from '5' to '4' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4641]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln128_reg_5831_reg' and it is trimmed from '5' to '4' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4616]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln91_reg_5738_reg' and it is trimmed from '4' to '3' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4930]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln68_reg_5645_reg' and it is trimmed from '4' to '3' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4905]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln308_reg_7000_reg' and it is trimmed from '6' to '5' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4876]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln294_reg_6615_reg' and it is trimmed from '7' to '6' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4867]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln249_reg_6203_reg' and it is trimmed from '7' to '6' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top.v:4716]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'ecg_cnn_top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'ecg_cnn_top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ecg_cnn_top_INPUT_BUS_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ecg_cnn_top_OUTPUT_BUS_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:25 ; elapsed = 00:01:38 . Memory (MB): peak = 1731.207 ; gain = 985.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_sign_delay' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_sign_delay' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_INC_DELAY' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized38) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized38) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_340_4_fu_2051/fexp_32ns_32ns_32_8_full_dsp_1_U308/ecg_cnn_top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized5) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/faddfsub_32ns_32ns_32_4_full_dsp_1_U334/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/faddfsub_32ns_32ns_32_4_full_dsp_1_U334/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/faddfsub_32ns_32ns_32_4_full_dsp_1_U334/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/faddfsub_32ns_32ns_32_4_full_dsp_1_U334/ecg_cnn_top_faddfsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_3_max_dsp_1_U335/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/fmul_32ns_32ns_32_3_max_dsp_1_U335/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_3_max_dsp_1_U335/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/fmul_32ns_32ns_32_3_max_dsp_1_U335/ecg_cnn_top_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized5) to 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized38) to 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized38) to 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized5) to 'inst/fdiv_32ns_32ns_32_12_no_dsp_1_U336/ecg_cnn_top_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized38) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized38) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/sitofp_32s_32_4_no_dsp_1_U337/ecg_cnn_top_sitofp_32s_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'ecg_cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U339/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U339/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U339/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U339/ecg_cnn_top_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2655]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [c:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.gen/sources_1/bd/ecg_system/ipshared/1546/hdl/verilog/ecg_cnn_top_OUTPUT_BUS_m_axi.v:2676]
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module ecg_cnn_top_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module ecg_cnn_top_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:18 ; elapsed = 00:04:38 . Memory (MB): peak = 2154.816 ; gain = 1409.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:27 ; elapsed = 00:04:48 . Memory (MB): peak = 2154.816 ; gain = 1409.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:35 ; elapsed = 00:04:56 . Memory (MB): peak = 2154.816 ; gain = 1409.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/s1_seq_out_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s1_seq_out_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s2_seq_out_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s2_seq_out_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_73_4_fu_1710/s1_conv_A_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_96_4_fu_1734/s1_conv_B_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_133_4_fu_1748/s2_conv_seq_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_157_4_fu_1762/s2_conv_A_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_180_4_fu_1786/s2_conv_B_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_219_4_fu_1807/s3_conv_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_fu_1828/s4_conv_w_U/q0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_fu_1828/s4_conv_w_U/q0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_fu_1828/s4_conv_w_U/q0_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_254_4_fu_1828/s4_conv_w_U/q0_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_327_2_fu_1923/output_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_310_2_fu_1968/fc2_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ecg_cnn_top_Pipeline_VITIS_LOOP_296_2_fu_1850/fc1_w_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_1_U/ram0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_1_U/ram0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_1_U/ram0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_1_U/ram0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_1_U/ram1_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_1_U/ram1_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram1_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram1_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/INPUT_BUS_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:45 ; elapsed = 00:05:07 . Memory (MB): peak = 2154.816 ; gain = 1409.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:51 ; elapsed = 00:05:14 . Memory (MB): peak = 2207.656 ; gain = 1462.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:51 ; elapsed = 00:05:14 . Memory (MB): peak = 2207.656 ; gain = 1462.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:54 ; elapsed = 00:05:17 . Memory (MB): peak = 2209.492 ; gain = 1464.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:54 ; elapsed = 00:05:17 . Memory (MB): peak = 2209.645 ; gain = 1464.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:55 ; elapsed = 00:05:18 . Memory (MB): peak = 2234.512 ; gain = 1489.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:55 ; elapsed = 00:05:18 . Memory (MB): peak = 2234.512 ; gain = 1489.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                         | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper__parameterized5_275 | Dynamic      | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6_225 | C+A*B        | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5     | Dynamic      | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6     | C+A*B        | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized7     | A*B          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized8     | PCIN>>17+A*B | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized9     | PCIN+A:B+C   | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized3     | (C+D+A*B)'   | 6      | 17     | 43     | 16     | 43     | 0    | 0    | 0    | 0    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_35  | Dynamic      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1     | Dynamic      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized2     | Dynamic      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper                     | C+A:B        | 0      | 6      | 0      | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0     | (C+A:B)'     | 30     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized4     | Dynamic      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
++------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   172|
+|2     |DSP48E1  |    14|
+|9     |LUT1     |   140|
+|10    |LUT2     |   951|
+|11    |LUT3     |  2616|
+|12    |LUT4     |  1539|
+|13    |LUT5     |  1333|
+|14    |LUT6     |  4938|
+|15    |MUXCY    |  1050|
+|16    |MUXF7    |   865|
+|17    |MUXF8    |   258|
+|18    |RAMB18E1 |     9|
+|27    |RAMB36E1 |    30|
+|37    |SRL16E   |   415|
+|38    |SRLC32E  |    36|
+|39    |XORCY    |   764|
+|40    |FDE      |    24|
+|41    |FDRE     | 19142|
+|42    |FDSE     |    74|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:55 ; elapsed = 00:05:18 . Memory (MB): peak = 2234.512 ; gain = 1489.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:57 ; elapsed = 00:05:01 . Memory (MB): peak = 2234.512 ; gain = 1397.922
+Synthesis Optimization Complete : Time (s): cpu = 00:04:56 ; elapsed = 00:05:18 . Memory (MB): peak = 2234.512 ; gain = 1489.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.524 . Memory (MB): peak = 2234.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3186 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2249.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 325 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 301 instances
+  FDE => FDRE: 24 instances
+
+Synth Design complete | Checksum: 7b152f71
+INFO: [Common 17-83] Releasing license: Synthesis
+426 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:07 ; elapsed = 00:05:45 . Memory (MB): peak = 2249.320 ; gain = 1734.105
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2249.320 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1/ecg_system_ecg_cnn_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ecg_system_ecg_cnn_top_0_0, cache-ID = 964c0ee025db07c0
+INFO: [Coretcl 2-1174] Renamed 583 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2249.320 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Rohit Kumawat/ecg_fpga_system/ecg_fpga_system.runs/ecg_system_ecg_cnn_top_0_0_synth_1/ecg_system_ecg_cnn_top_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ecg_system_ecg_cnn_top_0_0_utilization_synth.rpt -pb ecg_system_ecg_cnn_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  1 01:12:17 2026...

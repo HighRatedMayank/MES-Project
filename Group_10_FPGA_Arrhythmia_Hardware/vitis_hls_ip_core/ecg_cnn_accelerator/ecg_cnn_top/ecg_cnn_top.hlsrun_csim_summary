@@ -1,0 +1,184 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\ecg_cnn_top\\ecg_cnn_top.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "04/05/26 20:03:27",
+ "timestampMillis": "1775399607659",
+ "buildStep": {
+  "cmdId": "16191f90-69a1-44b3-877f-8a2839d3338b",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\ecg_cnn_top\\logs\\ecg_cnn_top.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\hls_config.cfg --work_dir ecg_cnn_top ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\hls_config.cfg",
+   "--work_dir",
+   "ecg_cnn_top"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 20:03:27",
+ "timestampMillis": "1775399607662",
+ "status": {
+  "cmdId": "16191f90-69a1-44b3-877f-8a2839d3338b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "04/05/26 20:03:40",
+ "timestampMillis": "1775399620053",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "ecg_cnn_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\cnn.cpp",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\cnn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\fc1_b.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\fc1_bn_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\fc1_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\fc2_b.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\fc2_bn_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\fc2_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\model_config.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\output_b.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\output_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\quantization_params.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s1_bn_A_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s1_bn_B_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s1_bn_seq_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s1_conv_A_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s1_conv_B_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s1_conv_seq_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s2_bn_A_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s2_bn_B_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s2_bn_seq_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s2_conv_A_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s2_conv_B_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s2_conv_seq_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s3_bn_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s3_conv_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s4_bn_bn.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\s4_conv_w.h",
+     "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\weights.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "04/05/26 20:03:40",
+ "timestampMillis": "1775399620060",
+ "buildStep": {
+  "cmdId": "1f10e27c-ecd6-4a2f-aa91-279f4dbd9728",
+  "name": "",
+  "logFile": "C:/Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator\\ecg_cnn_top\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Public\\Downloads\\ecg_cnn_accelerator\\ecg_cnn_accelerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 20:03:40",
+ "timestampMillis": "1775399620061",
+ "status": {
+  "cmdId": "1f10e27c-ecd6-4a2f-aa91-279f4dbd9728",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 20:03:45",
+ "timestampMillis": "1775399625254",
+ "status": {
+  "cmdId": "1f10e27c-ecd6-4a2f-aa91-279f4dbd9728",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 20:03:45",
+ "timestampMillis": "1775399625422",
+ "status": {
+  "cmdId": "16191f90-69a1-44b3-877f-8a2839d3338b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/05/26 20:03:45",
+ "timestampMillis": "1775399625425",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/05/26 20:03:45",
+ "timestampMillis": "1775399625425",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

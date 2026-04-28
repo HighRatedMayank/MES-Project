@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vitis HLS Report for 'ecg_cnn_top_Pipeline_VITIS_LOOP_282_2'
+================================================================
+* Date:           Tue Mar 31 12:27:55 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        ecg_cnn_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  15.00 ns|  12.121 ns|     4.05 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       37|       37|  0.555 us|  0.555 us|   36|   36|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_282_2  |       35|       35|         6|          3|          1|    11|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 3, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 3, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.91>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%s = alloca i32 1" [cnn.cpp:281->cnn.cpp:395]   --->   Operation 9 'alloca' 's' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%t = alloca i32 1" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 10 'alloca' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln280_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %zext_ln280"   --->   Operation 11 'read' 'zext_ln280_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.58ns)   --->   "%store_ln282 = store i4 0, i4 %t" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 12 'store' 'store_ln282' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 13 [1/1] (1.58ns)   --->   "%store_ln281 = store i32 0, i32 %s" [cnn.cpp:281->cnn.cpp:395]   --->   Operation 13 'store' 'store_ln281' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i260"   --->   Operation 14 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%t_2 = load i4 %t" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 15 'load' 't_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.73ns)   --->   "%icmp_ln282 = icmp_eq  i4 %t_2, i4 11" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 16 'icmp' 'icmp_ln282' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (1.73ns)   --->   "%add_ln282 = add i4 %t_2, i4 1" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 17 'add' 'add_ln282' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln282 = br i1 %icmp_ln282, void %for.inc.i260.split, void %for.inc9.i.exitStub" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 18 'br' 'br_ln282' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%add_ln = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i4.i6, i4 %t_2, i6 %zext_ln280_read" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 19 'bitconcatenate' 'add_ln' <Predicate = (!icmp_ln282)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln284 = zext i10 %add_ln" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 20 'zext' 'zext_ln284' <Predicate = (!icmp_ln282)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%s4_out_addr = getelementptr i32 %s4_out, i64 0, i64 %zext_ln284" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 21 'getelementptr' 's4_out_addr' <Predicate = (!icmp_ln282)> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (3.25ns)   --->   "%s4_out_load = load i10 %s4_out_addr" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 22 'load' 's4_out_load' <Predicate = (!icmp_ln282)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 704> <RAM>
+ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln282 = store i4 %add_ln282, i4 %t" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 23 'store' 'store_ln282' <Predicate = (!icmp_ln282)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 24 [1/2] ( I:3.25ns O:3.25ns )   --->   "%s4_out_load = load i10 %s4_out_addr" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 24 'load' 's4_out_load' <Predicate = (!icmp_ln282)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 704> <RAM>
+
+State 3 <SV = 2> <Delay = 10.5>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%s_load = load i32 %s" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 25 'load' 's_load' <Predicate = (!icmp_ln282)> <Delay = 0.00>
+ST_3 : Operation 26 [4/4] (10.5ns)   --->   "%s_1 = fadd i32 %s_load, i32 %s4_out_load" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 26 'fadd' 's_1' <Predicate = (!icmp_ln282)> <Delay = 10.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%s_load_1 = load i32 %s"   --->   Operation 35 'load' 's_load_1' <Predicate = (icmp_ln282)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.floatP0A, i32 %s_out, i32 %s_load_1"   --->   Operation 36 'write' 'write_ln0' <Predicate = (icmp_ln282)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 37 'ret' 'ret_ln0' <Predicate = (icmp_ln282)> <Delay = 1.58>
+
+State 4 <SV = 3> <Delay = 10.5>
+ST_4 : Operation 27 [3/4] (10.5ns)   --->   "%s_1 = fadd i32 %s_load, i32 %s4_out_load" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 27 'fadd' 's_1' <Predicate = true> <Delay = 10.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 10.5>
+ST_5 : Operation 28 [2/4] (10.5ns)   --->   "%s_1 = fadd i32 %s_load, i32 %s4_out_load" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 28 'fadd' 's_1' <Predicate = true> <Delay = 10.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 12.1>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%specpipeline_ln283 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_22" [cnn.cpp:283->cnn.cpp:395]   --->   Operation 29 'specpipeline' 'specpipeline_ln283' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%speclooptripcount_ln281 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 11, i64 11, i64 11" [cnn.cpp:281->cnn.cpp:395]   --->   Operation 30 'speclooptripcount' 'speclooptripcount_ln281' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%specloopname_ln282 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 31 'specloopname' 'specloopname_ln282' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/4] (10.5ns)   --->   "%s_1 = fadd i32 %s_load, i32 %s4_out_load" [cnn.cpp:284->cnn.cpp:395]   --->   Operation 32 'fadd' 's_1' <Predicate = true> <Delay = 10.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 33 [1/1] (1.58ns)   --->   "%store_ln281 = store i32 %s_1, i32 %s" [cnn.cpp:281->cnn.cpp:395]   --->   Operation 33 'store' 'store_ln281' <Predicate = true> <Delay = 1.58>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln282 = br void %for.inc.i260" [cnn.cpp:282->cnn.cpp:395]   --->   Operation 34 'br' 'br_ln282' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 15.000ns, clock uncertainty: 4.050ns.
+
+ <State 1>: 4.911ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln282', cnn.cpp:282->cnn.cpp:395) of constant 0 on local variable 't', cnn.cpp:282->cnn.cpp:395 [7]  (1.588 ns)
+	'load' operation 4 bit ('t', cnn.cpp:282->cnn.cpp:395) on local variable 't', cnn.cpp:282->cnn.cpp:395 [11]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln282', cnn.cpp:282->cnn.cpp:395) [12]  (1.735 ns)
+	'store' operation 0 bit ('store_ln282', cnn.cpp:282->cnn.cpp:395) of variable 'add_ln282', cnn.cpp:282->cnn.cpp:395 on local variable 't', cnn.cpp:282->cnn.cpp:395 [25]  (1.588 ns)
+
+ <State 2>: 3.254ns
+The critical path consists of the following:
+	'load' operation 32 bit ('s4_out_load', cnn.cpp:284->cnn.cpp:395) on array 's4_out' [23]  (3.254 ns)
+
+ <State 3>: 10.533ns
+The critical path consists of the following:
+	'load' operation 32 bit ('s_load', cnn.cpp:284->cnn.cpp:395) on local variable 's', cnn.cpp:281->cnn.cpp:395 [16]  (0.000 ns)
+	'fadd' operation 32 bit ('s', cnn.cpp:284->cnn.cpp:395) [24]  (10.533 ns)
+
+ <State 4>: 10.533ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('s', cnn.cpp:284->cnn.cpp:395) [24]  (10.533 ns)
+
+ <State 5>: 10.533ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('s', cnn.cpp:284->cnn.cpp:395) [24]  (10.533 ns)
+
+ <State 6>: 12.121ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('s', cnn.cpp:284->cnn.cpp:395) [24]  (10.533 ns)
+	'store' operation 0 bit ('store_ln281', cnn.cpp:281->cnn.cpp:395) of variable 's', cnn.cpp:284->cnn.cpp:395 on local variable 's', cnn.cpp:281->cnn.cpp:395 [26]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,27 @@
+<pragmas>
+<pragma file="cnn.cpp" line="115" pragmaType="pipeline" parentfunction="s1_add_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="181" pragmaType="pipeline" parentfunction="s2_branch_B" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="158" pragmaType="pipeline" parentfunction="s2_branch_A" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="283" pragmaType="pipeline" parentfunction="gap_layer" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="297" pragmaType="pipeline" parentfunction="fc1_layer" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="74" pragmaType="pipeline" parentfunction="s1_branch_A" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="97" pragmaType="pipeline" parentfunction="s1_branch_B" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="134" pragmaType="pipeline" parentfunction="s2_seq_conv" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="199" pragmaType="pipeline" parentfunction="s2_add_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="233" pragmaType="pipeline" parentfunction="s3_conv_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="220" pragmaType="pipeline" parentfunction="s3_conv_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="51" pragmaType="pipeline" parentfunction="s1_seq_conv" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="268" pragmaType="pipeline" parentfunction="s4_conv_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="255" pragmaType="pipeline" parentfunction="s4_conv_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="311" pragmaType="pipeline" parentfunction="fc2_layer" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="328" pragmaType="pipeline" parentfunction="output_layer" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="323" pragmaType="array_partition" parentfunction="output_layer" dim="1" factor="0" mode="complete" dynamic="0" variable="logits"/>
+<pragma file="cnn.cpp" line="339" pragmaType="array_partition" parentfunction="output_layer" dim="1" factor="0" mode="complete" dynamic="0" variable="ev"/>
+<pragma file="cnn.cpp" line="378" pragmaType="pipeline" parentfunction="ecg_cnn_top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="349" pragmaType="interface" parentfunction="ecg_cnn_top" mode="m_axi" port="input" bundle="INPUT_BUS" offset="slave" name="" depth="186" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn.cpp" line="350" pragmaType="interface" parentfunction="ecg_cnn_top" mode="m_axi" port="output" bundle="OUTPUT_BUS" offset="slave" name="" depth="5" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn.cpp" line="351" pragmaType="interface" parentfunction="ecg_cnn_top" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn.cpp" line="371" pragmaType="array_partition" parentfunction="ecg_cnn_top" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ11ecg_cnn_topPfS_E7gap_out"/>
+<pragma file="cnn.cpp" line="372" pragmaType="array_partition" parentfunction="ecg_cnn_top" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ11ecg_cnn_topPfS_E7fc1_out"/>
+<pragma file="cnn.cpp" line="373" pragmaType="array_partition" parentfunction="ecg_cnn_top" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ11ecg_cnn_topPfS_E7fc2_out"/>
+</pragmas>
