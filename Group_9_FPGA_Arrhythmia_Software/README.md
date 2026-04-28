@@ -6,7 +6,7 @@ This module is designed to be run independently on a CPU/GPU before any hardware
 
 ## Directory Overview
 
-* **`datasets`**: The dataset is extremely large and hosted externally. You can download the raw MIT-BIH Arrhythmia `.csv` files and processed `.npy` arrays from here: [Dataset Google Drive Link](https://drive.google.com/drive/folders/1B2QtmLPsYqF8U0MDU9ctIiFgjNG0qx7S?usp=sharing).
+* **`datasets/`**: The home for your data. This should contain the raw MIT-BIH Arrhythmia `.csv` files as well as the processed `.npy` arrays generated during the preprocessing phase.
 * **`jupyter_notebooks/`**: Contains the core `arrhythmia_classification.ipynb` notebook. This is the master script that handles data balancing (e.g., SMOTEENN), model architecture definition, training loops, and evaluating accuracy.
 * **`trained_models/`**: Stores the output of the training process. You will find standard Keras `.h5` models here, alongside TensorFlow Lite (`.tflite`) quantized models used for baseline comparison.
 * **`training_metrics_and_plots/`**: Contains visual validations of the model. Expect to see training curves (accuracy vs. loss over epochs), class distribution histograms, and confusion matrices generated after testing.

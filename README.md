@@ -8,7 +8,7 @@ The repository is divided into two primary domains using industry-standard namin
 
 ### 1. `software_model_training/` (Model Training & Quantization)
 This module contains everything related to training the CNN on a CPU/GPU.
-- **`datasets`**: [Raw MIT-BIH Arrhythmia datasets and processed numpy arrays (Hosted on Google Drive)](https://drive.google.com/drive/folders/1B2QtmLPsYqF8U0MDU9ctIiFgjNG0qx7S?usp=sharing).
+- **`datasets/`**: Raw MIT-BIH Arrhythmia datasets and processed numpy arrays.
 - **`jupyter_notebooks/`**: The Jupyter Notebook `arrhythmia_classification.ipynb` used for data preprocessing, training, and extracting FPGA weights.
 - **`trained_models/`**: Keras `.h5` files, TensorFlow Lite INT8 models, and logs.
 - **`training_metrics_and_plots/`**: Visual charts, confusion matrices, and weight distributions.
